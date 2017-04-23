@@ -1,0 +1,26 @@
+# Java variables
+
+# Nginx variables
+nginx_http_port: 80
+# nginx_https_port: 443
+
+# Haproxy variables
+mode: http
+listenport: 80
+httpd_port: 8080
+daemonname: ansiblelb
+balance: roundrobin
+affinity_enabled: true
+iface: eth1
+
+# Tomcat variables
+tomcat_http_port: 8080
+tomcat_https_port: 8443
+
+# Memcached variables
+memcached_port: 11211
+
+# Webapp variables
+war_file: petclinic.war
+app_context: petclinic
+

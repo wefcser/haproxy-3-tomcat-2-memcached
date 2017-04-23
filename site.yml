@@ -1,0 +1,29 @@
+---
+- hosts: all
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  roles:
+  - common
+
+- hosts: lb_servers
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  roles:
+  - haproxy
+
+- hosts: backend_servers
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  roles:
+  - tomcat
+  - webapp
+
+- hosts: memcached_servers
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  roles:
+  - memcached
