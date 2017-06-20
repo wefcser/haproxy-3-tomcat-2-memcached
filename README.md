@@ -14,6 +14,8 @@ For more detail about session management, see https://github.com/magro/memcached
 
 This playbook also deploys a demo web app (https://github.com/magro/msm-sample-webapp) to test the session management.
 
+You can change webapp in roles/webapp/files.
+
 
 ## Initial setup of inventory file
 
